@@ -42,6 +42,11 @@ namespace Execraws
             get { return "1.0"; }
         }
 
+        public ModuleType ModType
+        {
+            get { return ModuleType.EXTRA; }
+        }
+
         public void Dispose()
         {
         }

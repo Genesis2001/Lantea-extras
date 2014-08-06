@@ -51,6 +51,11 @@ namespace Status
             get { return "1.0"; }
         }
 
+        public ModuleType ModType
+        {
+            get { return ModuleType.EXTRA; }
+        }
+
         #endregion
     }
 }

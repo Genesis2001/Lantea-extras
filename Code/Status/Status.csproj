@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\Build\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -24,26 +24,26 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\Build\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Atlantis">
-      <HintPath>..\packages\Atlantis.4.0.0.0\lib\net45\Atlantis.dll</HintPath>
+      <HintPath>..\packages\Atlantis.4.0.1.0\lib\net45\Atlantis.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Atlantis.Net">
-      <HintPath>..\packages\Atlantis.Net.4.0.0.0\lib\net45\Atlantis.Net.dll</HintPath>
+      <HintPath>..\packages\Atlantis.Net.4.0.1.0\lib\net45\Atlantis.Net.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Atlantis.Net.Irc">
-      <HintPath>..\packages\Atlantis.Net.Irc.4.0.0.0\lib\net45\Atlantis.Net.Irc.dll</HintPath>
+      <HintPath>..\packages\Atlantis.Net.Irc.4.0.1.0\lib\net45\Atlantis.Net.Irc.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Lantea.Common">
-      <HintPath>..\packages\Lantea.Common.1.0.0.0\lib\net45\Lantea.Common.dll</HintPath>
+      <HintPath>..\packages\Lantea.Common.1.0.1.0\lib\net45\Lantea.Common.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -55,9 +55,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

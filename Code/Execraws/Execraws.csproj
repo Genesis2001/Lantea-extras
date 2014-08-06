@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\Build\Debug\Extensions\</OutputPath>
+    <OutputPath>..\..\Build\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -24,12 +24,28 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\Build\Release\Extensions\</OutputPath>
+    <OutputPath>..\..\Build\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Atlantis">
+      <HintPath>..\packages\Atlantis.4.0.1.0\lib\net45\Atlantis.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Atlantis.Net">
+      <HintPath>..\packages\Atlantis.Net.4.0.1.0\lib\net45\Atlantis.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Atlantis.Net.Irc">
+      <HintPath>..\packages\Atlantis.Net.Irc.4.0.1.0\lib\net45\Atlantis.Net.Irc.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Lantea.Common">
+      <HintPath>..\packages\Lantea.Common.1.0.1.0\lib\net45\Lantea.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
@@ -39,16 +55,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Atlantis\Atlantis.Net.Irc\Atlantis.Net.Irc.csproj">
-      <Project>{07410E3A-D2CF-4A81-BA52-864C8D206664}</Project>
-      <Name>Atlantis.Net.Irc</Name>
-      <Private>False</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Lantea\Lantea.Common\Lantea.Common.csproj">
-      <Project>{5F2809C1-A7B0-453A-9B8F-31BE9DCD2AA2}</Project>
-      <Name>Lantea.Common</Name>
-      <Private>False</Private>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

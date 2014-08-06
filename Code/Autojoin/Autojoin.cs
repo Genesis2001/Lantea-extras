@@ -42,7 +42,12 @@ namespace Autojoin
 	        get { return "1.2"; }
 	    }
 
-	    public void Dispose()
+        public ModuleType ModType
+        {
+            get { return ModuleType.EXTRA; }
+        }
+
+        public void Dispose()
 	    {
 
 	    }
